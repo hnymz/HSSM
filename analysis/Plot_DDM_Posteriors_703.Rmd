@@ -1,0 +1,230 @@
+---
+title: "LFXC_Interval (703 - fMRI exp)"
+author: "Ivan Grahek"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    code_folding: hide
+    theme: default
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+  word_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## About the code
+
+Experiment: LFXC_Interval
+Code written by: Ivan Grahek (2023)
+Description: Code for the analysis of behavioral data for the fMRI experiment 703
+
+_This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>._
+
+
+\newpage
+
+## Importing data
+```{r, warning=FALSE, message=FALSE}
+# Clear environemnt and import data
+
+# clear the environment
+rm(list=ls()) 
+#load packages and install them if they're not installed
+if (!require("pacman")) install.packages("pacman")
+ pacman::p_load(tidyverse,viridis,knitr)
+
+#pacman::p_load(tidyverse)
+# set seed
+set.seed(42) 
+# import data
+posterior = read.csv('DDM_Posteriors_703.csv')
+
+# Functions
+test.params <- function(df) {
+  inner_join(inner_join(inner_join(df %>%
+                                     map_dfr(mean) %>%
+                                     gather(parameter, estimate, everything()) %>% dplyr::rename(Mean=estimate),
+                                   df %>%
+                                     map_dfr(sd) %>%
+                                     gather(parameter, estimate, everything()) %>% dplyr::rename(SD=estimate),by='parameter'),
+                        
+                        df %>% map(~ .x > 0) %>% 
+                          map_dfr(mean) %>%
+                          gather(parameter, pvalue, everything()) %>%
+                          mutate(pvalue = if_else(round(pvalue)==1, 1-pvalue, pvalue),
+                                 sig = if_else(pvalue < 0.001, "***",
+                                               if_else(pvalue < 0.01, "**",
+                                                       if_else(pvalue < 0.05, "*", "n.s."))))),
+             inner_join(df %>%
+                          map_dfr(function(x) return(quantile(x,0.975)[[1]])) %>%
+                          gather(parameter, estimate, everything()) %>% dplyr::rename(CI_upper=estimate),
+                        df %>% map_dfr(function(x) return(quantile(x,0.025)[[1]])) %>%
+                          gather(parameter, estimate, everything()) %>% dplyr::rename(CI_lower=estimate),by='parameter'),by='parameter') 
+}
+
+```
+
+
+
+## Plot 
+
+### Plotting the model
+
+```{r, warning=FALSE, message=FALSE}
+set.seed(3)
+
+# Set the intercept to the mean value
+posterior$v_Intercept = mean(posterior$v_Intercept)
+posterior$a_Intercept = mean(posterior$a_Intercept)
+
+points = 20
+samples = 4000
+
+# Create the efficacy variable
+Efficacy = c(seq(-0.5,0.5,length.out=points/2),seq(-0.5,0.5,length.out=points/2))
+
+# Create RT predictions
+LowReward = rep(-0.5,points/2)
+HighReward = rep(0.5,points/2)
+Reward = c(LowReward,HighReward)
+
+# Sample from the posterior
+v_posterior_samples = data.frame(matrix(0, nrow = points, ncol = 3))
+colnames(v_posterior_samples) = c("estimate","lower_ci","upper_ci")
+v_posterior_samples$reward = Reward
+v_posterior_samples$efficacy = Efficacy
+
+a_posterior_samples = data.frame(matrix(0, nrow = points, ncol = 3))
+colnames(a_posterior_samples) = c("estimate","lower_ci","upper_ci")
+a_posterior_samples$reward = Reward
+a_posterior_samples$efficacy = Efficacy
+
+for (x in 1:(points)) {
+  efficacy_point = Efficacy[x]
+  reward_point = Reward[x]
+  
+  v_intercept_sample = sample(posterior$v_Intercept,samples,replace=T)
+  v_efficacy_sample = sample(posterior$v_Efficacy,samples,replace=T)
+  v_reward_sample = sample(posterior$v_Reward,samples,replace=T)
+  v_efficacy_x_reward_sample = sample(posterior$v_EfficacyXReward,samples,replace=T)
+  
+  a_intercept_sample = sample(posterior$a_Intercept,samples,replace=T)
+  a_efficacy_sample = sample(posterior$a_Efficacy,samples,replace=T)
+  a_reward_sample = sample(posterior$a_Reward,samples,replace=T)
+  a_efficacy_x_reward_sample = sample(posterior$a_EfficacyXReward,samples,replace=T)
+  
+  v_posterior_samples$estimate[x] = mean(v_intercept_sample + efficacy_point*v_efficacy_sample + reward_point*v_reward_sample + efficacy_point*reward_point*v_efficacy_x_reward_sample)
+  v_posterior_samples$lower_ci[x] = quantile(v_intercept_sample + efficacy_point*v_efficacy_sample + reward_point*v_reward_sample + efficacy_point*reward_point*v_efficacy_x_reward_sample, c(0.025),names=F)
+  v_posterior_samples$upper_ci[x] = quantile(v_intercept_sample + efficacy_point*v_efficacy_sample + reward_point*v_reward_sample + efficacy_point*reward_point*v_efficacy_x_reward_sample, c(0.975),names=F)
+  
+  a_posterior_samples$estimate[x] = mean(a_intercept_sample + efficacy_point*a_efficacy_sample + reward_point*a_reward_sample + efficacy_point*reward_point*a_efficacy_x_reward_sample)
+  a_posterior_samples$lower_ci[x] = quantile(a_intercept_sample + efficacy_point*a_efficacy_sample + reward_point*a_reward_sample + efficacy_point*reward_point*a_efficacy_x_reward_sample, c(0.025),names=F)
+  a_posterior_samples$upper_ci[x] = quantile(a_intercept_sample + efficacy_point*a_efficacy_sample + reward_point*a_reward_sample + efficacy_point*reward_point*a_efficacy_x_reward_sample, c(0.975),names=F)
+} 
+
+v_posterior_samples$Reward = ifelse(v_posterior_samples$reward ==0.5,"High","Low")
+v_posterior_samples$estimate = v_posterior_samples$estimate
+v_posterior_samples$lower_ci = v_posterior_samples$lower_ci
+v_posterior_samples$upper_ci = v_posterior_samples$upper_ci
+
+a_posterior_samples$Reward = ifelse(a_posterior_samples$reward ==0.5,"High","Low")
+a_posterior_samples$estimate = a_posterior_samples$estimate
+a_posterior_samples$lower_ci = a_posterior_samples$lower_ci
+a_posterior_samples$upper_ci = a_posterior_samples$upper_ci
+
+
+# Plot
+p = ggplot(v_posterior_samples, aes(x = efficacy,y=estimate,color = Reward)) +
+  theme_bw() +
+  geom_smooth(method = "lm", se = FALSE) + 
+  geom_ribbon(aes(ymin = lower_ci, ymax = upper_ci,fill = Reward), alpha = 0.1) + 
+  xlab("Model-based efficacy estimate") +
+  ylab("Drift rate") + 
+  scale_y_continuous(limits = c(2.4,3))+
+  scale_color_viridis(discrete = TRUE, option = "plasma", end = 0.7) +
+  scale_fill_viridis(discrete = TRUE, option = "plasma", end = 0.7) +  
+  theme(axis.line = element_line(colour = "black"),
+        plot.margin = grid::unit(c(5, 25, 5, 5), "mm"),
+        axis.line.x.bottom = element_line(size = 0.5),
+        axis.line.y.left = element_line(size = 0.5),
+        axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0)),
+        text = element_text(size = 33, color = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank(),
+        plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
+        axis.text.x = element_text(color = "black"),
+        axis.text.y = element_text(color = "black"),
+        axis.ticks = element_line(color = "black"),
+        legend.position = c(0.35, 0.2),
+        legend.background = element_rect(fill = "transparent", color = NA))  
+
+p
+Drift = p
+
+# Plot
+p = ggplot(a_posterior_samples, aes(x = efficacy,y=estimate,color = Reward)) +
+  theme_bw() +
+  geom_smooth(method = "lm", se = FALSE) + 
+  geom_ribbon(aes(ymin = lower_ci, ymax = upper_ci,fill = Reward), alpha = 0.1) + 
+  xlab("Model-based efficacy estimate") +
+  ylab("Threshold") + 
+  scale_y_continuous(limits = c(0.8,1))+
+  scale_color_viridis(discrete = TRUE, option = "plasma", end = 0.7) +
+  scale_fill_viridis(discrete = TRUE, option = "plasma", end = 0.7) +  
+  theme(axis.line = element_line(colour = "black"),
+        plot.margin = grid::unit(c(5, 25, 5, 5), "mm"),
+        axis.line.x.bottom = element_line(size = 0.5),
+        axis.line.y.left = element_line(size = 0.5),
+        axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0)),
+        text = element_text(size = 33, color = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank(),
+        plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
+        axis.text.x = element_text(color = "black"),
+        axis.text.y = element_text(color = "black"),
+        axis.ticks = element_line(color = "black"),
+        legend.position = c(0.35, 0.2),
+        legend.background = element_rect(fill = "transparent", color = NA))  
+
+p
+Threshold = p
+
+
+```
+
+
+### Table for the results
+```{r, warning=FALSE, message=FALSE}
+posterior = posterior[,-1]
+summary = test.params(posterior)
+
+kable(summary)
+```
+
+
+
+# Save the figures
+
+
+```{r, warning=FALSE, message=FALSE}
+# Task performance
+pdf(file="../../figures/DDM.pdf",height=8,width=16)
+p = cowplot::plot_grid(Drift,
+                       Threshold,
+                       ncol = 2)
+p
+dev.off()
+
+
+
+
+```
