@@ -7,6 +7,6 @@
 #SBATCH --mail-user=yiming_zhao1@brown.edu
 #SBATCH -J Model_testing
 #SBATCH -o R-%x.%j.out
-module load anaconda/3-5.2.0
-source activate pyHSSM 
+module load python intel-oneapi-mkl
+source /users/yzhao313/.venv/bin/activate
 python ../models/model_test.py

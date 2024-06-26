@@ -1,0 +1,89 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 3279072
+##  Job Name : Model_testing
+##  Nodelist : node1754
+##      CPUs : 4
+##  Mem/Node : 49152 MB
+## Directory : /oscar/home/yzhao313/hssm_test/HSSM/bash
+##   Job Started : Wed Jun 26 03:30:39 PM EDT 2024
+###############################################################################
+You have specified the `lapse` argument to include a lapse distribution, but `p_outlier` is set to either 0 or None. Your lapse distribution will be ignored.
+User supplied initial value detected for a_Intercept, 
+ skipping overwrite with default value.
+User supplied initial value detected for t_Intercept, 
+ skipping overwrite with default value.
+  0%|          | 0/400 [00:00<?, ?it/s]Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s]
+  0%|          | 0/400 [00:00<?, ?it/s][A
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A
+
+  0%|          | 0/400 [00:00<?, ?it/s][A[A
+
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A[ARunning chain 0:   0%|          | 0/400 [00:06<?, ?it/s]
+
+Running chain 2:   0%|          | 0/400 [00:06<?, ?it/s][A[A
+Running chain 1:   0%|          | 0/400 [00:06<?, ?it/s][A
+Running chain 1:   5%|▌         | 20/400 [01:10<20:05,  3.17s/it][ARunning chain 0:   5%|▌         | 20/400 [01:49<32:24,  5.12s/it]
+
+Running chain 2:   5%|▌         | 20/400 [02:16<40:57,  6.47s/it][A[A
+Running chain 1:  10%|█         | 40/400 [04:17<40:48,  6.80s/it][ARunning chain 0:  10%|█         | 40/400 [04:29<40:57,  6.83s/it]
+
+Running chain 2:  10%|█         | 40/400 [05:02<45:17,  7.55s/it][A[ARunning chain 0:  15%|█▌        | 60/400 [06:56<40:00,  7.06s/it]
+Running chain 1:  15%|█▌        | 60/400 [06:59<41:54,  7.40s/it][A
+
+Running chain 2:  15%|█▌        | 60/400 [07:49<44:51,  7.92s/it][A[A
+Running chain 1:  20%|██        | 80/400 [09:45<41:22,  7.76s/it][ARunning chain 0:  20%|██        | 80/400 [09:48<40:56,  7.68s/it]
+
+Running chain 2:  20%|██        | 80/400 [10:44<43:55,  8.24s/it][A[A
+Running chain 1:  25%|██▌       | 100/400 [12:16<38:23,  7.68s/it][A
+Running chain 1:  30%|███       | 120/400 [12:47<26:08,  5.60s/it][ARunning chain 0:  25%|██▌       | 100/400 [13:02<41:59,  8.40s/it]
+Running chain 1:  35%|███▌      | 140/400 [13:06<17:38,  4.07s/it][A
+
+Running chain 2:  25%|██▌       | 100/400 [13:14<39:51,  7.97s/it][A[A
+Running chain 1:  40%|████      | 160/400 [13:20<12:02,  3.01s/it][ARunning chain 0:  30%|███       | 120/400 [13:34<28:26,  6.10s/it]
+Running chain 1:  45%|████▌     | 180/400 [13:38<08:35,  2.34s/it][A
+
+Running chain 2:  30%|███       | 120/400 [13:44<26:57,  5.78s/it][A[ARunning chain 0:  35%|███▌      | 140/400 [13:54<19:09,  4.42s/it]
+Running chain 1:  50%|█████     | 200/400 [13:54<06:14,  1.87s/it][A
+
+Running chain 2:  35%|███▌      | 140/400 [14:02<18:05,  4.18s/it][A[A
+Running chain 1:  55%|█████▌    | 220/400 [14:10<04:37,  1.54s/it][ARunning chain 0:  40%|████      | 160/400 [14:11<13:06,  3.28s/it]
+
+Running chain 2:  40%|████      | 160/400 [14:15<12:13,  3.06s/it][A[A
+Running chain 1:  60%|██████    | 240/400 [14:26<03:30,  1.32s/it][ARunning chain 0:  45%|████▌     | 180/400 [14:27<09:12,  2.51s/it]
+
+Running chain 2:  45%|████▌     | 180/400 [14:34<08:48,  2.40s/it][A[A
+Running chain 1:  65%|██████▌   | 260/400 [14:42<02:41,  1.16s/it][ARunning chain 0:  50%|█████     | 200/400 [14:42<06:34,  1.97s/it]
+
+Running chain 2:  50%|█████     | 200/400 [14:50<06:21,  1.91s/it][A[A
+Running chain 1:  70%|███████   | 280/400 [14:57<02:05,  1.04s/it][ARunning chain 0:  55%|█████▌    | 220/400 [14:58<04:49,  1.61s/it]
+
+Running chain 2:  55%|█████▌    | 220/400 [15:06<04:41,  1.57s/it][A[A
+Running chain 1:  75%|███████▌  | 300/400 [15:13<01:36,  1.04it/s][ARunning chain 0:  60%|██████    | 240/400 [15:14<03:38,  1.36s/it]
+
+Running chain 2:  60%|██████    | 240/400 [15:22<03:32,  1.33s/it][A[A
+Running chain 1:  80%|████████  | 320/400 [15:28<01:12,  1.11it/s][ARunning chain 0:  65%|██████▌   | 260/400 [15:30<02:46,  1.19s/it]
+
+Running chain 2:  65%|██████▌   | 260/400 [15:37<02:43,  1.17s/it][A[A
+Running chain 1:  85%|████████▌ | 340/400 [15:44<00:51,  1.15it/s][ARunning chain 0:  70%|███████   | 280/400 [15:45<02:07,  1.06s/it]
+
+Running chain 2:  70%|███████   | 280/400 [15:53<02:06,  1.05s/it][A[A
+Running chain 1:  90%|█████████ | 360/400 [16:00<00:33,  1.18it/s][ARunning chain 0:  75%|███████▌  | 300/400 [16:01<01:38,  1.02it/s]
+
+Running chain 2:  75%|███████▌  | 300/400 [16:09<01:37,  1.03it/s][A[A
+Running chain 1:  95%|█████████▌| 380/400 [16:16<00:16,  1.20it/s][ARunning chain 0:  80%|████████  | 320/400 [16:17<01:13,  1.08it/s]
+
+Running chain 2:  80%|████████  | 320/400 [16:24<01:12,  1.10it/s][A[A
+Running chain 1: 100%|██████████| 400/400 [16:32<00:00,  1.22it/s][ARunning chain 0:  85%|████████▌ | 340/400 [16:33<00:53,  1.13it/s]
+
+Running chain 2:  85%|████████▌ | 340/400 [16:39<00:51,  1.17it/s][A[ARunning chain 0:  90%|█████████ | 360/400 [16:45<00:32,  1.24it/s]
+
+Running chain 2:  90%|█████████ | 360/400 [16:51<00:31,  1.29it/s][A[ARunning chain 0:  95%|█████████▌| 380/400 [16:58<00:14,  1.34it/s]
+
+Running chain 2:  95%|█████████▌| 380/400 [17:03<00:14,  1.38it/s][A[ARunning chain 0: 100%|██████████| 400/400 [17:10<00:00,  1.40it/s]
+
+Running chain 2: 100%|██████████| 400/400 [17:15<00:00,  1.46it/s][A[ARunning chain 0: 100%|██████████| 400/400 [17:15<00:00,  2.59s/it]
+Running chain 1: 100%|██████████| 400/400 [17:15<00:00,  2.59s/it]
+Running chain 2: 100%|██████████| 400/400 [17:15<00:00,  2.59s/it]
+We recommend running at least 4 chains for robust computation of convergence diagnostics
+The rhat statistic is larger than 1.01 for some parameters. This indicates problems during sampling. See https://arxiv.org/abs/1903.08008 for details
+The effective sample size per chain is smaller than 100 for some parameters.  A higher number is needed for reliable rhat and ess computation. See https://arxiv.org/abs/1903.08008 for details

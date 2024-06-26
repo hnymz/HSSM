@@ -1,0 +1,95 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 3278572
+##  Job Name : Model_testing
+##  Nodelist : node1735
+##      CPUs : 4
+##  Mem/Node : 49152 MB
+## Directory : /oscar/home/yzhao313/hssm_test/HSSM/bash
+##   Job Started : Wed Jun 26 01:51:56 PM EDT 2024
+###############################################################################
+You have specified the `lapse` argument to include a lapse distribution, but `p_outlier` is set to either 0 or None. Your lapse distribution will be ignored.
+User supplied initial value detected for a_Intercept, 
+ skipping overwrite with default value.
+User supplied initial value detected for t_Intercept, 
+ skipping overwrite with default value.
+Traceback (most recent call last):
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 879, in backends
+    backend = _init_backend(platform)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 970, in _init_backend
+    backend = registration.factory()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 668, in factory
+    return xla_client.make_c_api_client(plugin_name, updated_options, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jaxlib/xla_client.py", line 200, in make_c_api_client
+    return _xla.get_c_api_client(plugin_name, options, distributed_client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jaxlib.xla_extension.XlaRuntimeError: FAILED_PRECONDITION: No visible GPU devices.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/oscar/home/yzhao313/hssm_test/HSSM/bash/../models/model_test.py", line 59, in <module>
+    samples_model_reg_v_ddm_hier1A = model_reg_v_ddm_hier1A.sample(
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/hssm/hssm.py", line 563, in sample
+    idata = self.model.fit(inference_method=sampler, init=init, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/bambi/models.py", line 333, in fit
+    return self.backend.run(
+           ^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/bambi/backend/pymc.py", line 96, in run
+    result = self._run_mcmc(
+             ^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/bambi/backend/pymc.py", line 211, in _run_mcmc
+    idata = pymc.sampling_jax.sample_numpyro_nuts(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/pymc/sampling/jax.py", line 634, in sample_jax_nuts
+    raw_mcmc_samples, sample_stats, library = sampler_fn(
+                                              ^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/pymc/sampling/jax.py", line 458, in _sample_numpyro_nuts
+    logp_fn = get_jaxified_logp(model, negative_logp=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/pymc/sampling/jax.py", line 153, in get_jaxified_logp
+    logp_fn = get_jaxified_graph(inputs=model.value_vars, outputs=[model_logp])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/pymc/sampling/jax.py", line 146, in get_jaxified_graph
+    return jax_funcify(fgraph)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/oscar/runtime/software/external/python/3.11.0/lib/python3.11/functools.py", line 909, in wrapper
+    return dispatch(args[0].__class__)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/pytensor/link/jax/dispatch/basic.py", line 51, in jax_funcify_FunctionGraph
+    return fgraph_to_python(
+           ^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/pytensor/link/utils.py", line 747, in fgraph_to_python
+    global_env[local_input_name] = type_conversion_fn(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "/oscar/runtime/software/external/python/3.11.0/lib/python3.11/functools.py", line 909, in wrapper
+    return dispatch(args[0].__class__)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/pytensor/link/jax/dispatch/basic.py", line 35, in jax_typify_ndarray
+    return jnp.array(data, dtype=dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jax/_src/numpy/lax_numpy.py", line 3214, in array
+    out_array: Array = lax_internal._convert_element_type(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jax/_src/lax/lax.py", line 559, in _convert_element_type
+    return convert_element_type_p.bind(operand, new_dtype=new_dtype,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jax/_src/core.py", line 416, in bind
+    return self.bind_with_trace(find_top_trace(args), args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jax/_src/core.py", line 420, in bind_with_trace
+    out = trace.process_primitive(self, map(trace.full_raise, args), params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jax/_src/core.py", line 921, in process_primitive
+    return primitive.impl(*tracers, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/jax/_src/dispatch.py", line 87, in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+RuntimeError: Unable to initialize backend 'cuda': FAILED_PRECONDITION: No visible GPU devices. (you may need to uninstall the failing plugin package, or set JAX_PLATFORMS=cpu to skip this backend.)
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

@@ -1,13 +1,9 @@
 import hssm
-import pytensor
 import numpy as np
 import pandas as pd
+import pytensor
+import jax
 
-# Setting float precision in pytensor
-pytensor.config.floatX = "float32"
-pytensor.config.optimizer = 'None'
-# JAX Configuration
-jax.config.update("jax_enable_x64", False)
 
 # Import the data
 data = pd.read_csv('../data/dataset_reg_v_hier_full.csv')
@@ -64,7 +60,7 @@ model_reg_v_ddm_hier1A = hssm.HSSM(
 # Sample
 samples_model_reg_v_ddm_hier1A = model_reg_v_ddm_hier1A.sample(
     sampler="nuts_numpyro",  # type of sampler to choose, 'nuts_numpyro', 'nuts_blackjax' of default pymc nuts sampler
-    cores=3,  # how many cores to use
+    cores=1,  # how many cores to use
     chains=3,  # how many chains to run
     draws=200,  # number of draws from the markov chain
     tune=200,  # number of burn-in samples
@@ -72,4 +68,4 @@ samples_model_reg_v_ddm_hier1A = model_reg_v_ddm_hier1A.sample(
 )
 
 # Save the model
-samples_model_reg_v_ddm_hier1A.to_netcdf('../output/Model_test')
+samples_model_reg_v_ddm_hier1A.to_netcdf('../outputs/Model_test')
