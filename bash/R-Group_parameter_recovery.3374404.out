@@ -1,0 +1,422 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 3374404
+##  Job Name : Group_parameter_recovery
+##  Nodelist : node1717
+##      CPUs : 4
+##  Mem/Node : 49152 MB
+## Directory : /oscar/home/yzhao313/hssm_test/HSSM/bash
+##   Job Started : Mon Jul  1 08:28:43 PM EDT 2024
+###############################################################################
+You have specified the `lapse` argument to include a lapse distribution, but `p_outlier` is set to either 0 or None. Your lapse distribution will be ignored.
+User supplied initial value detected for a_Intercept, 
+ skipping overwrite with default value.
+User supplied initial value detected for t_Intercept, 
+ skipping overwrite with default value.
+  0%|          | 0/400 [00:00<?, ?it/s]Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s]
+  0%|          | 0/400 [00:00<?, ?it/s][A
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A
+
+  0%|          | 0/400 [00:00<?, ?it/s][A[A
+
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A[A
+Running chain 1:   0%|          | 0/400 [00:07<?, ?it/s][A
+
+Running chain 2:   0%|          | 0/400 [00:07<?, ?it/s][A[ARunning chain 0:   0%|          | 0/400 [00:07<?, ?it/s]Running chain 0:   5%|▌         | 20/400 [00:07<00:04, 93.83it/s]
+
+Running chain 2:   5%|▌         | 20/400 [00:07<00:04, 93.12it/s][A[A
+Running chain 1:   5%|▌         | 20/400 [00:07<00:04, 88.36it/s][A
+
+Running chain 2:  10%|█         | 40/400 [00:07<00:04, 89.93it/s][A[ARunning chain 0:  10%|█         | 40/400 [00:07<00:04, 89.77it/s]
+Running chain 1:  10%|█         | 40/400 [00:07<00:04, 88.28it/s][ARunning chain 0:  15%|█▌        | 60/400 [00:07<00:03, 89.31it/s]
+
+Running chain 2:  15%|█▌        | 60/400 [00:07<00:03, 89.24it/s][A[A
+Running chain 1:  15%|█▌        | 60/400 [00:07<00:03, 87.43it/s][A
+
+Running chain 2:  20%|██        | 80/400 [00:08<00:03, 90.21it/s][A[ARunning chain 0:  20%|██        | 80/400 [00:08<00:03, 89.50it/s]
+Running chain 1:  20%|██        | 80/400 [00:08<00:03, 87.98it/s][ARunning chain 0:  25%|██▌       | 100/400 [00:08<00:03, 90.65it/s]
+
+Running chain 2:  25%|██▌       | 100/400 [00:08<00:03, 89.89it/s][A[A
+Running chain 1:  25%|██▌       | 100/400 [00:08<00:03, 88.33it/s][A
+
+Running chain 2:  30%|███       | 120/400 [00:08<00:03, 89.73it/s][A[ARunning chain 0:  30%|███       | 120/400 [00:08<00:03, 89.56it/s]
+Running chain 1:  30%|███       | 120/400 [00:08<00:03, 89.36it/s][ARunning chain 0:  35%|███▌      | 140/400 [00:08<00:02, 89.53it/s]
+
+Running chain 2:  35%|███▌      | 140/400 [00:08<00:02, 89.41it/s][A[A
+Running chain 1:  35%|███▌      | 140/400 [00:08<00:02, 89.43it/s][A
+
+Running chain 2:  40%|████      | 160/400 [00:08<00:02, 90.35it/s][A[ARunning chain 0:  40%|████      | 160/400 [00:08<00:02, 88.34it/s]
+Running chain 1:  40%|████      | 160/400 [00:08<00:02, 88.35it/s][A
+
+Running chain 2:  45%|████▌     | 180/400 [00:09<00:02, 91.08it/s][A[ARunning chain 0:  45%|████▌     | 180/400 [00:09<00:02, 88.27it/s]
+Running chain 1:  45%|████▌     | 180/400 [00:09<00:02, 88.75it/s][A
+
+Running chain 2:  50%|█████     | 200/400 [00:09<00:02, 92.10it/s][A[ARunning chain 0:  50%|█████     | 200/400 [00:09<00:02, 88.57it/s]
+Running chain 1:  50%|█████     | 200/400 [00:09<00:02, 88.98it/s][A
+
+Running chain 2:  55%|█████▌    | 220/400 [00:09<00:01, 92.95it/s][A[ARunning chain 0:  55%|█████▌    | 220/400 [00:09<00:02, 88.91it/s]
+Running chain 1:  55%|█████▌    | 220/400 [00:09<00:02, 88.23it/s][A
+
+Running chain 2:  60%|██████    | 240/400 [00:09<00:01, 92.31it/s][A[ARunning chain 0:  60%|██████    | 240/400 [00:09<00:01, 88.80it/s]
+Running chain 1:  60%|██████    | 240/400 [00:09<00:01, 88.23it/s][A
+
+Running chain 2:  65%|██████▌   | 260/400 [00:10<00:01, 91.31it/s][A[ARunning chain 0:  65%|██████▌   | 260/400 [00:10<00:01, 88.36it/s]
+Running chain 1:  65%|██████▌   | 260/400 [00:10<00:01, 87.25it/s][A
+
+Running chain 2:  70%|███████   | 280/400 [00:10<00:01, 91.34it/s][A[ARunning chain 0:  70%|███████   | 280/400 [00:10<00:01, 87.56it/s]
+Running chain 1:  70%|███████   | 280/400 [00:10<00:01, 86.98it/s][A
+
+Running chain 2:  75%|███████▌  | 300/400 [00:10<00:01, 90.76it/s][A[ARunning chain 0:  75%|███████▌  | 300/400 [00:10<00:01, 88.41it/s]
+Running chain 1:  75%|███████▌  | 300/400 [00:10<00:01, 88.95it/s][A
+
+Running chain 2:  80%|████████  | 320/400 [00:10<00:00, 90.36it/s][A[ARunning chain 0:  80%|████████  | 320/400 [00:10<00:00, 88.61it/s]
+Running chain 1:  80%|████████  | 320/400 [00:10<00:00, 89.74it/s][A
+
+Running chain 2:  85%|████████▌ | 340/400 [00:10<00:00, 89.95it/s][A[ARunning chain 0:  85%|████████▌ | 340/400 [00:11<00:00, 88.79it/s]
+Running chain 1:  85%|████████▌ | 340/400 [00:11<00:00, 90.38it/s][A
+
+Running chain 2:  90%|█████████ | 360/400 [00:11<00:00, 90.51it/s][A[ARunning chain 0:  90%|█████████ | 360/400 [00:11<00:00, 89.54it/s]
+Running chain 1:  90%|█████████ | 360/400 [00:11<00:00, 90.34it/s][A
+
+Running chain 2:  95%|█████████▌| 380/400 [00:11<00:00, 89.32it/s][A[ARunning chain 0:  95%|█████████▌| 380/400 [00:11<00:00, 90.64it/s]
+Running chain 1:  95%|█████████▌| 380/400 [00:11<00:00, 90.52it/s][A
+
+Running chain 2: 100%|██████████| 400/400 [00:11<00:00, 90.25it/s][A[ARunning chain 0: 100%|██████████| 400/400 [00:11<00:00, 91.87it/s]
+Running chain 1: 100%|██████████| 400/400 [00:11<00:00, 92.61it/s][ARunning chain 0: 100%|██████████| 400/400 [00:11<00:00, 34.29it/s]
+Running chain 1: 100%|██████████| 400/400 [00:11<00:00, 34.29it/s]
+Running chain 2: 100%|██████████| 400/400 [00:11<00:00, 34.29it/s]
+/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/arviz/stats/diagnostics.py:592: RuntimeWarning: invalid value encountered in scalar divide
+  (between_chain_variance / within_chain_variance + num_samples - 1) / (num_samples)
+There were 600 divergences after tuning. Increase `target_accept` or reparameterize.
+We recommend running at least 4 chains for robust computation of convergence diagnostics
+You have specified the `lapse` argument to include a lapse distribution, but `p_outlier` is set to either 0 or None. Your lapse distribution will be ignored.
+User supplied initial value detected for a_Intercept, 
+ skipping overwrite with default value.
+User supplied initial value detected for t_Intercept, 
+ skipping overwrite with default value.
+  0%|          | 0/400 [00:00<?, ?it/s]Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s]
+  0%|          | 0/400 [00:00<?, ?it/s][A
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A
+
+  0%|          | 0/400 [00:00<?, ?it/s][A[A
+
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A[A
+Running chain 1:   0%|          | 0/400 [00:07<?, ?it/s][ARunning chain 0:   0%|          | 0/400 [00:07<?, ?it/s]
+
+Running chain 2:   0%|          | 0/400 [00:07<?, ?it/s][A[A
+Running chain 1:   5%|▌         | 20/400 [01:38<28:50,  4.55s/it][A
+
+Running chain 2:   5%|▌         | 20/400 [02:08<38:30,  6.08s/it][A[ARunning chain 0:   5%|▌         | 20/400 [02:28<44:52,  7.09s/it]
+Running chain 1:  10%|█         | 40/400 [05:06<48:00,  8.00s/it][A
+
+Running chain 2:  10%|█         | 40/400 [05:15<48:03,  8.01s/it][A[ARunning chain 0:  10%|█         | 40/400 [05:34<50:17,  8.38s/it]
+
+Running chain 2:  15%|█▌        | 60/400 [08:04<46:31,  8.21s/it][A[A
+Running chain 1:  15%|█▌        | 60/400 [08:20<49:45,  8.78s/it][ARunning chain 0:  15%|█▌        | 60/400 [08:46<50:37,  8.93s/it]
+
+Running chain 2:  20%|██        | 80/400 [10:59<44:55,  8.42s/it][A[A
+Running chain 1:  20%|██        | 80/400 [11:10<46:11,  8.66s/it][ARunning chain 0:  20%|██        | 80/400 [11:43<47:31,  8.91s/it]
+Running chain 1:  25%|██▌       | 100/400 [13:53<42:25,  8.48s/it][A
+
+Running chain 2:  25%|██▌       | 100/400 [13:57<42:55,  8.58s/it][A[A
+Running chain 1:  30%|███       | 120/400 [14:26<28:46,  6.16s/it][A
+
+Running chain 2:  30%|███       | 120/400 [14:28<28:54,  6.19s/it][A[ARunning chain 0:  25%|██▌       | 100/400 [14:44<44:45,  8.95s/it]
+Running chain 1:  35%|███▌      | 140/400 [14:45<19:17,  4.45s/it][A
+
+Running chain 2:  35%|███▌      | 140/400 [14:51<19:41,  4.54s/it][A[A
+Running chain 1:  40%|████      | 160/400 [15:03<13:16,  3.32s/it][A
+
+Running chain 2:  40%|████      | 160/400 [15:14<13:51,  3.46s/it][A[A
+Running chain 1:  45%|████▌     | 180/400 [15:18<09:13,  2.52s/it][ARunning chain 0:  30%|███       | 120/400 [15:21<30:31,  6.54s/it]
+Running chain 1:  50%|█████     | 200/400 [15:35<06:40,  2.00s/it][A
+
+Running chain 2:  45%|████▌     | 180/400 [15:37<10:03,  2.74s/it][A[ARunning chain 0:  35%|███▌      | 140/400 [15:42<20:33,  4.74s/it]
+Running chain 1:  55%|█████▌    | 220/400 [15:52<04:56,  1.65s/it][A
+
+Running chain 2:  50%|█████     | 200/400 [15:55<07:16,  2.18s/it][A[ARunning chain 0:  40%|████      | 160/400 [16:00<14:04,  3.52s/it]
+Running chain 1:  60%|██████    | 240/400 [16:08<03:42,  1.39s/it][A
+
+Running chain 2:  55%|█████▌    | 220/400 [16:12<05:19,  1.77s/it][A[ARunning chain 0:  45%|████▌     | 180/400 [16:17<09:50,  2.68s/it]
+Running chain 1:  65%|██████▌   | 260/400 [16:24<02:50,  1.22s/it][A
+
+Running chain 2:  60%|██████    | 240/400 [16:29<03:58,  1.49s/it][A[ARunning chain 0:  50%|█████     | 200/400 [16:33<07:01,  2.11s/it]
+Running chain 1:  70%|███████   | 280/400 [16:41<02:12,  1.11s/it][A
+
+Running chain 2:  65%|██████▌   | 260/400 [16:46<03:01,  1.30s/it][A[ARunning chain 0:  55%|█████▌    | 220/400 [16:50<05:08,  1.72s/it]
+Running chain 1:  75%|███████▌  | 300/400 [16:58<01:41,  1.02s/it][A
+
+Running chain 2:  70%|███████   | 280/400 [17:03<02:19,  1.16s/it][A[ARunning chain 0:  60%|██████    | 240/400 [17:07<03:52,  1.45s/it]
+Running chain 1:  80%|████████  | 320/400 [17:14<01:16,  1.04it/s][A
+
+Running chain 2:  75%|███████▌  | 300/400 [17:20<01:46,  1.07s/it][A[ARunning chain 0:  65%|██████▌   | 260/400 [17:23<02:57,  1.26s/it]
+Running chain 1:  85%|████████▌ | 340/400 [17:30<00:55,  1.09it/s][A
+
+Running chain 2:  80%|████████  | 320/400 [17:37<01:20,  1.00s/it][A[ARunning chain 0:  70%|███████   | 280/400 [17:40<02:16,  1.14s/it]
+Running chain 1:  90%|█████████ | 360/400 [17:46<00:35,  1.13it/s][A
+
+Running chain 2:  85%|████████▌ | 340/400 [17:54<00:57,  1.05it/s][A[ARunning chain 0:  75%|███████▌  | 300/400 [17:57<01:44,  1.05s/it]
+Running chain 1:  95%|█████████▌| 380/400 [18:03<00:17,  1.15it/s][A
+
+Running chain 2:  90%|█████████ | 360/400 [18:11<00:36,  1.08it/s][A[ARunning chain 0:  80%|████████  | 320/400 [18:13<01:18,  1.02it/s]
+Running chain 1: 100%|██████████| 400/400 [18:20<00:00,  1.16it/s][A
+
+Running chain 2:  95%|█████████▌| 380/400 [18:26<00:17,  1.15it/s][A[ARunning chain 0:  85%|████████▌ | 340/400 [18:28<00:53,  1.11it/s]
+
+Running chain 2: 100%|██████████| 400/400 [18:40<00:00,  1.23it/s][A[ARunning chain 0:  90%|█████████ | 360/400 [18:41<00:33,  1.21it/s]Running chain 0:  95%|█████████▌| 380/400 [18:53<00:15,  1.32it/s]Running chain 0: 100%|██████████| 400/400 [19:05<00:00,  1.41it/s]Running chain 0: 100%|██████████| 400/400 [19:05<00:00,  2.86s/it]
+Running chain 1: 100%|██████████| 400/400 [19:05<00:00,  2.86s/it]
+Running chain 2: 100%|██████████| 400/400 [19:05<00:00,  2.86s/it]
+We recommend running at least 4 chains for robust computation of convergence diagnostics
+The rhat statistic is larger than 1.01 for some parameters. This indicates problems during sampling. See https://arxiv.org/abs/1903.08008 for details
+The effective sample size per chain is smaller than 100 for some parameters.  A higher number is needed for reliable rhat and ess computation. See https://arxiv.org/abs/1903.08008 for details
+You have specified the `lapse` argument to include a lapse distribution, but `p_outlier` is set to either 0 or None. Your lapse distribution will be ignored.
+User supplied initial value detected for a_Intercept, 
+ skipping overwrite with default value.
+User supplied initial value detected for t_Intercept, 
+ skipping overwrite with default value.
+  0%|          | 0/400 [00:00<?, ?it/s]Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s]
+  0%|          | 0/400 [00:00<?, ?it/s][A
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A
+
+  0%|          | 0/400 [00:00<?, ?it/s][A[A
+
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A[A
+
+Running chain 2:   0%|          | 0/400 [00:07<?, ?it/s][A[ARunning chain 0:   0%|          | 0/400 [00:07<?, ?it/s]
+Running chain 1:   0%|          | 0/400 [00:07<?, ?it/s][A
+Running chain 1:   5%|▌         | 20/400 [00:07<00:03, 97.38it/s][ARunning chain 0:   5%|▌         | 20/400 [00:07<00:04, 93.10it/s]
+
+Running chain 2:   5%|▌         | 20/400 [00:07<00:04, 92.23it/s][A[ARunning chain 0:  10%|█         | 40/400 [00:07<00:03, 93.13it/s]
+Running chain 1:  10%|█         | 40/400 [00:07<00:03, 91.66it/s][A
+
+Running chain 2:  10%|█         | 40/400 [00:07<00:03, 91.34it/s][A[ARunning chain 0:  15%|█▌        | 60/400 [00:07<00:03, 92.27it/s]
+Running chain 1:  15%|█▌        | 60/400 [00:07<00:03, 90.99it/s][A
+
+Running chain 2:  15%|█▌        | 60/400 [00:07<00:03, 90.12it/s][A[ARunning chain 0:  20%|██        | 80/400 [00:07<00:03, 92.43it/s]
+
+Running chain 2:  20%|██        | 80/400 [00:07<00:03, 90.84it/s][A[A
+Running chain 1:  20%|██        | 80/400 [00:07<00:03, 89.86it/s][ARunning chain 0:  25%|██▌       | 100/400 [00:08<00:03, 92.11it/s]
+
+Running chain 2:  25%|██▌       | 100/400 [00:08<00:03, 90.63it/s][A[A
+Running chain 1:  25%|██▌       | 100/400 [00:08<00:03, 88.99it/s][ARunning chain 0:  30%|███       | 120/400 [00:08<00:02, 93.84it/s]
+
+Running chain 2:  30%|███       | 120/400 [00:08<00:03, 90.48it/s][A[A
+Running chain 1:  30%|███       | 120/400 [00:08<00:03, 88.96it/s][ARunning chain 0:  35%|███▌      | 140/400 [00:08<00:02, 93.31it/s]
+
+Running chain 2:  35%|███▌      | 140/400 [00:08<00:02, 90.33it/s][A[A
+Running chain 1:  35%|███▌      | 140/400 [00:08<00:02, 88.37it/s][ARunning chain 0:  40%|████      | 160/400 [00:08<00:02, 92.38it/s]
+
+Running chain 2:  40%|████      | 160/400 [00:08<00:02, 91.05it/s][A[A
+Running chain 1:  40%|████      | 160/400 [00:08<00:02, 89.60it/s][ARunning chain 0:  45%|████▌     | 180/400 [00:09<00:02, 92.54it/s]
+
+Running chain 2:  45%|████▌     | 180/400 [00:09<00:02, 90.46it/s][A[A
+Running chain 1:  45%|████▌     | 180/400 [00:09<00:02, 89.88it/s][ARunning chain 0:  50%|█████     | 200/400 [00:09<00:02, 92.95it/s]
+
+Running chain 2:  50%|█████     | 200/400 [00:09<00:02, 90.86it/s][A[A
+Running chain 1:  50%|█████     | 200/400 [00:09<00:02, 89.83it/s][ARunning chain 0:  55%|█████▌    | 220/400 [00:09<00:01, 92.27it/s]
+
+Running chain 2:  55%|█████▌    | 220/400 [00:09<00:01, 90.52it/s][A[A
+Running chain 1:  55%|█████▌    | 220/400 [00:09<00:02, 88.89it/s][ARunning chain 0:  60%|██████    | 240/400 [00:09<00:01, 92.15it/s]
+
+Running chain 2:  60%|██████    | 240/400 [00:09<00:01, 91.15it/s][A[A
+Running chain 1:  60%|██████    | 240/400 [00:09<00:01, 89.03it/s][ARunning chain 0:  65%|██████▌   | 260/400 [00:09<00:01, 91.93it/s]
+
+Running chain 2:  65%|██████▌   | 260/400 [00:09<00:01, 89.26it/s][A[A
+Running chain 1:  65%|██████▌   | 260/400 [00:10<00:01, 89.11it/s][ARunning chain 0:  70%|███████   | 280/400 [00:10<00:01, 91.64it/s]
+
+Running chain 2:  70%|███████   | 280/400 [00:10<00:01, 89.32it/s][A[A
+Running chain 1:  70%|███████   | 280/400 [00:10<00:01, 88.63it/s][ARunning chain 0:  75%|███████▌  | 300/400 [00:10<00:01, 91.48it/s]
+
+Running chain 2:  75%|███████▌  | 300/400 [00:10<00:01, 88.73it/s][A[A
+Running chain 1:  75%|███████▌  | 300/400 [00:10<00:01, 89.26it/s][ARunning chain 0:  80%|████████  | 320/400 [00:10<00:00, 92.73it/s]
+
+Running chain 2:  80%|████████  | 320/400 [00:10<00:00, 88.80it/s][A[A
+Running chain 1:  80%|████████  | 320/400 [00:10<00:00, 89.04it/s][ARunning chain 0:  85%|████████▌ | 340/400 [00:10<00:00, 93.14it/s]
+
+Running chain 2:  85%|████████▌ | 340/400 [00:10<00:00, 89.39it/s][A[A
+Running chain 1:  85%|████████▌ | 340/400 [00:10<00:00, 89.36it/s][ARunning chain 0:  90%|█████████ | 360/400 [00:11<00:00, 92.60it/s]
+
+Running chain 2:  90%|█████████ | 360/400 [00:11<00:00, 89.96it/s][A[A
+Running chain 1:  90%|█████████ | 360/400 [00:11<00:00, 88.86it/s][ARunning chain 0:  95%|█████████▌| 380/400 [00:11<00:00, 93.18it/s]
+
+Running chain 2:  95%|█████████▌| 380/400 [00:11<00:00, 89.96it/s][A[A
+Running chain 1:  95%|█████████▌| 380/400 [00:11<00:00, 89.24it/s][ARunning chain 0: 100%|██████████| 400/400 [00:11<00:00, 93.08it/s]
+
+Running chain 2: 100%|██████████| 400/400 [00:11<00:00, 93.98it/s][A[A
+Running chain 1: 100%|██████████| 400/400 [00:11<00:00, 94.05it/s][ARunning chain 0: 100%|██████████| 400/400 [00:11<00:00, 34.62it/s]
+Running chain 1: 100%|██████████| 400/400 [00:11<00:00, 34.62it/s]
+Running chain 2: 100%|██████████| 400/400 [00:11<00:00, 34.62it/s]
+/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/arviz/stats/diagnostics.py:592: RuntimeWarning: invalid value encountered in scalar divide
+  (between_chain_variance / within_chain_variance + num_samples - 1) / (num_samples)
+There were 600 divergences after tuning. Increase `target_accept` or reparameterize.
+We recommend running at least 4 chains for robust computation of convergence diagnostics
+You have specified the `lapse` argument to include a lapse distribution, but `p_outlier` is set to either 0 or None. Your lapse distribution will be ignored.
+User supplied initial value detected for a_Intercept, 
+ skipping overwrite with default value.
+User supplied initial value detected for t_Intercept, 
+ skipping overwrite with default value.
+  0%|          | 0/400 [00:00<?, ?it/s]Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s]
+  0%|          | 0/400 [00:00<?, ?it/s][A
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A
+
+  0%|          | 0/400 [00:00<?, ?it/s][A[A
+
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A[A
+Running chain 1:   0%|          | 0/400 [00:07<?, ?it/s][A
+
+Running chain 2:   0%|          | 0/400 [00:07<?, ?it/s][A[ARunning chain 0:   0%|          | 0/400 [00:07<?, ?it/s]
+
+Running chain 2:   5%|▌         | 20/400 [01:12<20:37,  3.26s/it][A[A
+Running chain 1:   5%|▌         | 20/400 [01:45<30:59,  4.89s/it][ARunning chain 0:   5%|▌         | 20/400 [02:03<36:48,  5.81s/it]
+
+Running chain 2:  10%|█         | 40/400 [03:41<34:24,  5.73s/it][A[ARunning chain 0:  10%|█         | 40/400 [04:35<41:14,  6.87s/it]
+Running chain 1:  10%|█         | 40/400 [04:35<42:13,  7.04s/it][A
+
+Running chain 2:  15%|█▌        | 60/400 [05:36<32:26,  5.73s/it][A[ARunning chain 0:  15%|█▌        | 60/400 [06:40<37:15,  6.58s/it]
+Running chain 1:  15%|█▌        | 60/400 [06:53<39:25,  6.96s/it][A
+
+Running chain 2:  20%|██        | 80/400 [07:45<32:05,  6.02s/it][A[ARunning chain 0:  20%|██        | 80/400 [09:08<36:49,  6.90s/it]
+Running chain 1:  20%|██        | 80/400 [09:10<36:53,  6.92s/it][A
+
+Running chain 2:  25%|██▌       | 100/400 [09:29<28:37,  5.72s/it][A[A
+
+Running chain 2:  30%|███       | 120/400 [10:02<20:15,  4.34s/it][A[A
+
+Running chain 2:  35%|███▌      | 140/400 [10:20<13:56,  3.22s/it][A[A
+
+Running chain 2:  40%|████      | 160/400 [10:39<09:56,  2.49s/it][A[A
+
+Running chain 2:  45%|████▌     | 180/400 [10:57<07:19,  2.00s/it][A[A
+
+Running chain 2:  50%|█████     | 200/400 [11:13<05:24,  1.62s/it][A[A
+Running chain 1:  25%|██▌       | 100/400 [11:23<34:05,  6.82s/it][ARunning chain 0:  25%|██▌       | 100/400 [11:24<34:19,  6.86s/it]
+
+Running chain 2:  55%|█████▌    | 220/400 [11:29<04:08,  1.38s/it][A[A
+
+Running chain 2:  60%|██████    | 240/400 [11:46<03:15,  1.22s/it][A[ARunning chain 0:  30%|███       | 120/400 [11:49<23:10,  4.97s/it]
+Running chain 1:  30%|███       | 120/400 [11:53<23:25,  5.02s/it][A
+
+Running chain 2:  65%|██████▌   | 260/400 [12:03<02:35,  1.11s/it][A[ARunning chain 0:  35%|███▌      | 140/400 [12:07<15:43,  3.63s/it]
+Running chain 1:  35%|███▌      | 140/400 [12:12<15:57,  3.68s/it][A
+
+Running chain 2:  70%|███████   | 280/400 [12:20<02:03,  1.03s/it][A[ARunning chain 0:  40%|████      | 160/400 [12:23<10:53,  2.72s/it]
+Running chain 1:  40%|████      | 160/400 [12:28<11:06,  2.78s/it][A
+
+Running chain 2:  75%|███████▌  | 300/400 [12:38<01:37,  1.02it/s][A[ARunning chain 0:  45%|████▌     | 180/400 [12:44<08:04,  2.20s/it]
+Running chain 1:  45%|████▌     | 180/400 [12:49<08:11,  2.24s/it][A
+
+Running chain 2:  80%|████████  | 320/400 [12:55<01:15,  1.06it/s][A[ARunning chain 0:  50%|█████     | 200/400 [13:00<05:56,  1.78s/it]
+Running chain 1:  50%|█████     | 200/400 [13:07<06:03,  1.82s/it][A
+
+Running chain 2:  85%|████████▌ | 340/400 [13:12<00:54,  1.10it/s][A[ARunning chain 0:  55%|█████▌    | 220/400 [13:18<04:29,  1.50s/it]
+Running chain 1:  55%|█████▌    | 220/400 [13:24<04:32,  1.52s/it][A
+
+Running chain 2:  90%|█████████ | 360/400 [13:28<00:35,  1.12it/s][A[ARunning chain 0:  60%|██████    | 240/400 [13:34<03:27,  1.30s/it]
+Running chain 1:  60%|██████    | 240/400 [13:40<03:28,  1.30s/it][A
+
+Running chain 2:  95%|█████████▌| 380/400 [13:45<00:17,  1.15it/s][A[ARunning chain 0:  65%|██████▌   | 260/400 [13:51<02:42,  1.16s/it]
+Running chain 1:  65%|██████▌   | 260/400 [13:56<02:41,  1.15s/it][A
+
+Running chain 2: 100%|██████████| 400/400 [14:02<00:00,  1.16it/s][A[ARunning chain 0:  70%|███████   | 280/400 [14:07<02:05,  1.05s/it]
+Running chain 1:  70%|███████   | 280/400 [14:10<02:02,  1.02s/it][ARunning chain 0:  75%|███████▌  | 300/400 [14:20<01:33,  1.07it/s]
+Running chain 1:  75%|███████▌  | 300/400 [14:23<01:30,  1.10it/s][ARunning chain 0:  80%|████████  | 320/400 [14:34<01:08,  1.18it/s]
+Running chain 1:  80%|████████  | 320/400 [14:37<01:06,  1.19it/s][ARunning chain 0:  85%|████████▌ | 340/400 [14:47<00:47,  1.26it/s]
+Running chain 1:  85%|████████▌ | 340/400 [14:50<00:46,  1.28it/s][ARunning chain 0:  90%|█████████ | 360/400 [15:00<00:30,  1.33it/s]
+Running chain 1:  90%|█████████ | 360/400 [15:03<00:29,  1.35it/s][ARunning chain 0:  95%|█████████▌| 380/400 [15:13<00:14,  1.37it/s]
+Running chain 1:  95%|█████████▌| 380/400 [15:16<00:14,  1.39it/s][ARunning chain 0: 100%|██████████| 400/400 [15:27<00:00,  1.41it/s]
+Running chain 1: 100%|██████████| 400/400 [15:29<00:00,  1.43it/s][ARunning chain 0: 100%|██████████| 400/400 [15:29<00:00,  2.32s/it]
+Running chain 1: 100%|██████████| 400/400 [15:29<00:00,  2.32s/it]
+Running chain 2: 100%|██████████| 400/400 [15:29<00:00,  2.32s/it]
+We recommend running at least 4 chains for robust computation of convergence diagnostics
+The rhat statistic is larger than 1.01 for some parameters. This indicates problems during sampling. See https://arxiv.org/abs/1903.08008 for details
+The effective sample size per chain is smaller than 100 for some parameters.  A higher number is needed for reliable rhat and ess computation. See https://arxiv.org/abs/1903.08008 for details
+You have specified the `lapse` argument to include a lapse distribution, but `p_outlier` is set to either 0 or None. Your lapse distribution will be ignored.
+User supplied initial value detected for a_Intercept, 
+ skipping overwrite with default value.
+User supplied initial value detected for t_Intercept, 
+ skipping overwrite with default value.
+  0%|          | 0/400 [00:00<?, ?it/s]Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s]
+  0%|          | 0/400 [00:00<?, ?it/s][A
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A
+
+  0%|          | 0/400 [00:00<?, ?it/s][A[A
+
+Compiling.. :   0%|          | 0/400 [00:00<?, ?it/s][A[A
+
+Running chain 2:   0%|          | 0/400 [00:06<?, ?it/s][A[A
+Running chain 1:   0%|          | 0/400 [00:06<?, ?it/s][ARunning chain 0:   0%|          | 0/400 [00:06<?, ?it/s]
+Running chain 1:   5%|▌         | 20/400 [00:07<00:03, 96.38it/s][A
+
+Running chain 2:   5%|▌         | 20/400 [00:07<00:04, 92.17it/s][A[ARunning chain 0:   5%|▌         | 20/400 [00:07<00:04, 92.67it/s]
+
+Running chain 2:  10%|█         | 40/400 [00:07<00:03, 90.76it/s][A[A
+Running chain 1:  10%|█         | 40/400 [00:07<00:03, 91.65it/s][ARunning chain 0:  10%|█         | 40/400 [00:07<00:03, 92.09it/s]
+Running chain 1:  15%|█▌        | 60/400 [00:07<00:03, 91.95it/s][ARunning chain 0:  15%|█▌        | 60/400 [00:07<00:03, 90.77it/s]
+
+Running chain 2:  15%|█▌        | 60/400 [00:07<00:03, 89.47it/s][A[ARunning chain 0:  20%|██        | 80/400 [00:07<00:03, 91.47it/s]
+
+Running chain 2:  20%|██        | 80/400 [00:07<00:03, 90.42it/s][A[A
+Running chain 1:  20%|██        | 80/400 [00:07<00:03, 90.11it/s][A
+
+Running chain 2:  25%|██▌       | 100/400 [00:07<00:03, 91.53it/s][A[ARunning chain 0:  25%|██▌       | 100/400 [00:07<00:03, 91.48it/s]
+Running chain 1:  25%|██▌       | 100/400 [00:07<00:03, 89.19it/s][ARunning chain 0:  30%|███       | 120/400 [00:08<00:03, 90.82it/s]
+
+Running chain 2:  30%|███       | 120/400 [00:08<00:03, 89.33it/s][A[A
+Running chain 1:  30%|███       | 120/400 [00:08<00:03, 89.85it/s][ARunning chain 0:  35%|███▌      | 140/400 [00:08<00:02, 90.81it/s]
+Running chain 1:  35%|███▌      | 140/400 [00:08<00:02, 90.30it/s][A
+
+Running chain 2:  35%|███▌      | 140/400 [00:08<00:02, 89.45it/s][A[ARunning chain 0:  40%|████      | 160/400 [00:08<00:02, 91.88it/s]
+Running chain 1:  40%|████      | 160/400 [00:08<00:02, 89.40it/s][A
+
+Running chain 2:  40%|████      | 160/400 [00:08<00:02, 88.76it/s][A[ARunning chain 0:  45%|████▌     | 180/400 [00:08<00:02, 91.25it/s]
+Running chain 1:  45%|████▌     | 180/400 [00:08<00:02, 90.75it/s][A
+
+Running chain 2:  45%|████▌     | 180/400 [00:08<00:02, 88.79it/s][A[ARunning chain 0:  50%|█████     | 200/400 [00:09<00:02, 90.66it/s]
+Running chain 1:  50%|█████     | 200/400 [00:09<00:02, 90.99it/s][A
+
+Running chain 2:  50%|█████     | 200/400 [00:09<00:02, 88.45it/s][A[ARunning chain 0:  55%|█████▌    | 220/400 [00:09<00:01, 90.64it/s]
+Running chain 1:  55%|█████▌    | 220/400 [00:09<00:01, 90.90it/s][A
+
+Running chain 2:  55%|█████▌    | 220/400 [00:09<00:02, 89.15it/s][A[ARunning chain 0:  60%|██████    | 240/400 [00:09<00:01, 90.82it/s]
+Running chain 1:  60%|██████    | 240/400 [00:09<00:01, 91.32it/s][A
+
+Running chain 2:  60%|██████    | 240/400 [00:09<00:01, 89.32it/s][A[ARunning chain 0:  65%|██████▌   | 260/400 [00:09<00:01, 89.85it/s]
+Running chain 1:  65%|██████▌   | 260/400 [00:09<00:01, 90.60it/s][A
+
+Running chain 2:  65%|██████▌   | 260/400 [00:09<00:01, 89.92it/s][A[ARunning chain 0:  70%|███████   | 280/400 [00:09<00:01, 89.93it/s]
+Running chain 1:  70%|███████   | 280/400 [00:09<00:01, 90.49it/s][A
+
+Running chain 2:  70%|███████   | 280/400 [00:09<00:01, 88.51it/s][A[ARunning chain 0:  75%|███████▌  | 300/400 [00:10<00:01, 90.11it/s]
+Running chain 1:  75%|███████▌  | 300/400 [00:10<00:01, 90.80it/s][A
+
+Running chain 2:  75%|███████▌  | 300/400 [00:10<00:01, 88.93it/s][A[ARunning chain 0:  80%|████████  | 320/400 [00:10<00:00, 89.54it/s]
+Running chain 1:  80%|████████  | 320/400 [00:10<00:00, 90.00it/s][A
+
+Running chain 2:  80%|████████  | 320/400 [00:10<00:00, 89.58it/s][A[ARunning chain 0:  85%|████████▌ | 340/400 [00:10<00:00, 90.55it/s]
+Running chain 1:  85%|████████▌ | 340/400 [00:10<00:00, 89.28it/s][A
+
+Running chain 2:  85%|████████▌ | 340/400 [00:10<00:00, 89.07it/s][A[ARunning chain 0:  90%|█████████ | 360/400 [00:10<00:00, 91.37it/s]
+Running chain 1:  90%|█████████ | 360/400 [00:10<00:00, 88.46it/s][A
+
+Running chain 2:  90%|█████████ | 360/400 [00:10<00:00, 89.57it/s][A[ARunning chain 0:  95%|█████████▌| 380/400 [00:11<00:00, 90.79it/s]
+Running chain 1:  95%|█████████▌| 380/400 [00:11<00:00, 88.56it/s][A
+
+Running chain 2:  95%|█████████▌| 380/400 [00:11<00:00, 89.09it/s][A[ARunning chain 0: 100%|██████████| 400/400 [00:11<00:00, 89.73it/s]
+Running chain 1: 100%|██████████| 400/400 [00:11<00:00, 89.63it/s][A
+
+Running chain 2: 100%|██████████| 400/400 [00:11<00:00, 91.17it/s][A[ARunning chain 0: 100%|██████████| 400/400 [00:11<00:00, 35.38it/s]
+Running chain 1: 100%|██████████| 400/400 [00:11<00:00, 35.38it/s]
+Running chain 2: 100%|██████████| 400/400 [00:11<00:00, 35.38it/s]
+/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/arviz/stats/diagnostics.py:592: RuntimeWarning: invalid value encountered in scalar divide
+  (between_chain_variance / within_chain_variance + num_samples - 1) / (num_samples)
+There were 600 divergences after tuning. Increase `target_accept` or reparameterize.
+We recommend running at least 4 chains for robust computation of convergence diagnostics
+You have specified the `lapse` argument to include a lapse distribution, but `p_outlier` is set to either 0 or None. Your lapse distribution will be ignored.
+Traceback (most recent call last):
+  File "/oscar/home/yzhao313/hssm_test/HSSM/bash/../models/grp_param_recover.py", line 76, in <module>
+    model_reg_v_ddm_hier1A = hssm.HSSM(
+                             ^^^^^^^^^^
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/hssm/hssm.py", line 383, in __init__
+    self._post_check_data_sanity()
+  File "/oscar/home/yzhao313/.venv/lib/python3.11/site-packages/hssm/hssm.py", line 1673, in _post_check_data_sanity
+    raise ValueError(
+ValueError: You have negative response times in your dataset, which is not allowed.
